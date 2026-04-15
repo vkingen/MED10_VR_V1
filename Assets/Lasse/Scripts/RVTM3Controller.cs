@@ -38,10 +38,13 @@ public class RVTM3Controller : MonoBehaviour
     {
         currentPressure = 0f;
         targetPressure = 0f;
+        UpdatePressure();
+        UpdateNeedle();
     }
 
     void Update()
     {
+        if (!turnedOn) return;
         UpdatePressure();
         UpdateNeedle();
     }
@@ -57,6 +60,18 @@ public class RVTM3Controller : MonoBehaviour
         Debug.Log(value);
     }
 
+    public void TurnOn()
+    {
+        turnedOn = true;
+        UpdatePressure();
+        UpdateNeedle();
+    }
+    public void TurnOff()
+    {
+        turnedOn = false;
+        UpdatePressure();
+        UpdateNeedle();
+    }
     
     void UpdatePressure()
     {

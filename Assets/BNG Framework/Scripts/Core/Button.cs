@@ -126,6 +126,10 @@ namespace BNG {
             return new Vector3(transform.localPosition.x, MinLocalY, transform.localPosition.z);
         }
 
+        public void Test()
+        {
+            Debug.Log("Hej");
+        }
         // Callback for ButtonDown
         public virtual void OnButtonDown() {
 
