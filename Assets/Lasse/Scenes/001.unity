@@ -997,7 +997,7 @@ MonoBehaviour:
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
-  HideHandGraphics: 1
+  HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
   SnapHandModel: 1
@@ -2250,9 +2250,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &81224051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2269,7 +2269,7 @@ MonoBehaviour:
   GrabButton: 2
   Grabtype: 2
   GrabPhysics: 4
-  GrabMechanic: 1
+  GrabMechanic: 0
   GrabSpeed: 15
   RemoteGrabbable: 0
   RemoteGrabMechanic: 0
@@ -20898,13 +20898,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279012227}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471143795}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1299718532
 GameObject:
   m_ObjectHideFlags: 0
@@ -24682,9 +24682,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &1471143791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32862,7 +32862,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.06639831
+  m_Radius: 0.04413199
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1941171692
 GameObject:
@@ -33538,9 +33538,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &1959417438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33641,7 +33641,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959417436}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 890cf3fa6d7260842a21ef8f5fb2f85a, type: 3}
   m_Name: 
@@ -33662,7 +33662,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959417436}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5481f564cd754547b202b32a524a988, type: 3}
   m_Name: 
@@ -43786,7 +43786,7 @@ MonoBehaviour:
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
-  HideHandGraphics: 1
+  HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
   SnapHandModel: 1
@@ -43913,7 +43913,7 @@ MonoBehaviour:
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
-  HideHandGraphics: 1
+  HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
   SnapHandModel: 1
@@ -45477,7 +45477,7 @@ MonoBehaviour:
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
-  HideHandGraphics: 1
+  HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
   SnapHandModel: 1
@@ -46253,7 +46253,7 @@ MonoBehaviour:
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
-  HideHandGraphics: 1
+  HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
   SnapHandModel: 1
@@ -56776,7 +56776,7 @@ MonoBehaviour:
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
-  HideHandGraphics: 1
+  HideHandGraphics: 0
   ParentToHands: 0
   ParentHandModel: 1
   SnapHandModel: 1
