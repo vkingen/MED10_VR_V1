@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using Unity.VisualScripting;
+using UnityEngine;
 
 public class RVTM3Controller : MonoBehaviour
 {
@@ -25,31 +27,102 @@ public class RVTM3Controller : MonoBehaviour
     public Transform needleTransform;
 
     [Tooltip("Angle at 0 mbar")]
-    public float angleAtZero = -120f;
+    public float angleAtZero = -230f;
 
     [Tooltip("Angle at -1000 mbar")]
-    public float angleAtMaxVacuum = 120f;
+    public float angleAtMaxVacuum = 47f;
 
     float currentNeedleAngle;
 
     bool turnedOn = false;
+    bool stopping = false;
+    bool firstTurnOn = false;
+
+
+    [Header("Audio")]
+    public AudioSource suctionSource;
+
+    [Tooltip("Pitch at 0 mbar")]
+    public float minPitch = 0.8f;
+
+    [Tooltip("Pitch at max vacuum (-1000 mbar)")]
+    public float maxPitch = 1.5f;
+
+    [Tooltip("Volume when fully active")]
+    public float maxVolume = 1f;
+
+    [Tooltip("Fade speed for audio")]
+    public float audioSmoothSpeed = 3f;
 
     void Start()
     {
-        currentPressure = 0f;
         targetPressure = 0f;
-        UpdatePressure();
-        UpdateNeedle();
+
+        if (suctionSource != null)
+        {
+            suctionSource.loop = true;
+            suctionSource.playOnAwake = false;
+            suctionSource.volume = 0f;
+        }
     }
 
     void Update()
     {
-        if (!turnedOn) return;
-        UpdatePressure();
+        if (turnedOn)
+        {
+            UpdatePressure();
+        }
+        if (stopping)
+        {
+            // Smooth transition (mechanical feel)
+            currentPressure = Mathf.Lerp(
+                currentPressure,
+                targetPressure,
+                Time.deltaTime * smoothingSpeed
+            );
+        }
+        
         UpdateNeedle();
+        UpdateAudio(); // ← add this
+    }
+    void UpdateAudio()
+    {
+        if (suctionSource == null) return;
+
+        // Normalize pressure (0 → 0, -1000 → 1)
+        float normalized = Mathf.InverseLerp(maxPressure, minPressure, currentPressure);
+
+        // Pitch follows pressure
+        float targetPitch = Mathf.Lerp(minPitch, maxPitch, normalized);
+        suctionSource.pitch = Mathf.Lerp(
+            suctionSource.pitch,
+            targetPitch,
+            Time.deltaTime * audioSmoothSpeed
+        );
+
+        // Volume control
+        float targetVolume = (turnedOn || stopping) ? maxVolume : 0f;
+
+        suctionSource.volume = Mathf.Lerp(
+            suctionSource.volume,
+            targetVolume,
+            Time.deltaTime * audioSmoothSpeed
+        );
+
+        // Play / Stop logic
+        if ((turnedOn || stopping) && !suctionSource.isPlaying)
+        {
+            suctionSource.Play();
+        }
+
+        // Stop when fully silent
+        if (!turnedOn && suctionSource.volume < 0.01f && suctionSource.isPlaying)
+        {
+            suctionSource.Stop();
+        }
     }
 
-    
+
     public void SetKnobValue(float value)
     {
         knobValue = Mathf.Clamp01(value);
@@ -62,15 +135,24 @@ public class RVTM3Controller : MonoBehaviour
 
     public void TurnOn()
     {
+        stopping = false;
         turnedOn = true;
-        UpdatePressure();
-        UpdateNeedle();
+        
+        if (!firstTurnOn)
+        {
+            firstTurnOn = true;
+            targetPressure = -400f;
+        }
+
+        Debug.Log("Turning on");
     }
     public void TurnOff()
     {
         turnedOn = false;
-        UpdatePressure();
-        UpdateNeedle();
+        stopping = true;
+
+        targetPressure = 0;
+        Debug.Log("Turning off");
     }
     
     void UpdatePressure()
