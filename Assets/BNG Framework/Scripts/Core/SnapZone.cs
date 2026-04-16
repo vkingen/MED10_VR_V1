@@ -11,7 +11,7 @@ namespace BNG {
         [Tooltip("The currently held item. Set this in the editor to equip on Start().")]
         public Grabbable HeldItem;        
 
-        [Tooltip("TSet this in the editor to equip on Start().")]
+        [Tooltip("Set this in the editor to equip on Start().")]
         public Grabbable StartingItem;
 
         [Header("Options")]

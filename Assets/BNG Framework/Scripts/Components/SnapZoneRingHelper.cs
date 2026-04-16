@@ -28,6 +28,7 @@ namespace BNG {
         CanvasScaler ringCanvas;
         Text ringText;
         GrabbablesInTrigger nearbyGrabbables;
+        public Grabber[] grabbers;
 
         bool validSnap = false;
 
