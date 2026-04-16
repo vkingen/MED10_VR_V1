@@ -62,7 +62,7 @@ public class RVTM3Controller : MonoBehaviour
         {
             suctionSource.loop = true;
             suctionSource.playOnAwake = false;
-            suctionSource.volume = 0f;
+            //suctionSource.volume = 0f;
         }
     }
 
@@ -100,14 +100,14 @@ public class RVTM3Controller : MonoBehaviour
             Time.deltaTime * audioSmoothSpeed
         );
 
-        // Volume control
-        float targetVolume = (turnedOn || stopping) ? maxVolume : 0f;
+        //// Volume control
+        //float targetVolume = (turnedOn || stopping) ? maxVolume : 0f;
 
-        suctionSource.volume = Mathf.Lerp(
-            suctionSource.volume,
-            targetVolume,
-            Time.deltaTime * audioSmoothSpeed
-        );
+        //suctionSource.volume = Mathf.Lerp(
+        //    suctionSource.volume,
+        //    targetVolume,
+        //    Time.deltaTime * audioSmoothSpeed
+        //);
 
         // Play / Stop logic
         if ((turnedOn || stopping) && !suctionSource.isPlaying)

@@ -19455,6 +19455,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 543450652595054064}
     m_Modifications:
+    - target: {fileID: 364518689470124501, guid: 624ef7d780846b342988732cbb919663,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.193
+      objectReference: {fileID: 0}
     - target: {fileID: 364518689470124506, guid: 624ef7d780846b342988732cbb919663,
         type: 3}
       propertyPath: AllowPhysicsForces
@@ -39835,7 +39840,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 54.8
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -39870,7 +39875,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
