@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class InnerCannula : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField]
+    private GameObject dirtObject;
 
-    // Update is called once per frame
-    void Update()
+    //Cleaning the canulla at the sink
+    public void Clean()
     {
-        
+        if (dirtObject != null)
+        {
+            dirtObject.SetActive(false);
+        }
     }
 }
