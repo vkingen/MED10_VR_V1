@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Lasse/Scenes/Interaction - Sug - Kinematic.unity
+    guid: 529bfcedd7feca043a59acd027b8e1df
+  - enabled: 1
+    path: Assets/Lasse/Scenes/Interaction - Sug - NonKinematic.unity
+    guid: 2b3368a14ff9c5e4893a99d8044f6bdc
+  - enabled: 1
     path: Assets/Lasse/Scenes/001.unity
     guid: cd9f555e45303b847b9dab7735c5a79b
   m_configObjects:
