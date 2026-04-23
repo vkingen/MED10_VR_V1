@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Lasse/Scenes/Interaction - Sug - Kinematic.unity
-    guid: 529bfcedd7feca043a59acd027b8e1df
+    path: Assets/Lasse/Scenes/2nd Iteration/Graphics.unity
+    guid: c79d1901e4f447a47afdb3eb5e6bcd63
   - enabled: 1
-    path: Assets/Lasse/Scenes/Interaction - Sug - NonKinematic.unity
+    path: Assets/Lasse/Scenes/2nd Iteration/TutorialAndGrabInteractions.unity
+    guid: 0c9a0fb101a013e45aa14a94f614400a
+  - enabled: 1
+    path: Assets/Lasse/Scenes/2nd Iteration/NonKinematic.unity
     guid: 2b3368a14ff9c5e4893a99d8044f6bdc
   - enabled: 1
-    path: Assets/Lasse/Scenes/001.unity
-    guid: cd9f555e45303b847b9dab7735c5a79b
+    path: Assets/Lasse/Scenes/2nd Iteration/Kinematic.unity
+    guid: 529bfcedd7feca043a59acd027b8e1df
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a7512768906c3d5408c2f4438a029684,
       type: 2}
