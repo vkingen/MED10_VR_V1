@@ -430,7 +430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1511242893
 Transform:
   m_ObjectHideFlags: 0
@@ -439,8 +439,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511242892}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.262, y: 0, z: -0.878}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.942, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -448,7 +448,7 @@ Transform:
   - {fileID: 1013098775}
   - {fileID: 1721237327}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1581288959
 GameObject:
   m_ObjectHideFlags: 0
@@ -20295,31 +20295,7 @@ MonoBehaviour:
       m_Calls: []
   OnDetachEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1511242892}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 19208570408442537}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   ClosestGrabbable: {fileID: 0}
 --- !u!114 &2476528667598571374
 MonoBehaviour:
@@ -26133,7 +26109,7 @@ Transform:
   m_GameObject: {fileID: 19208570408442537}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.22433007, y: 0, z: -1.00714}
+  m_LocalPosition: {x: 0, y: 0, z: -0.819}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -31235,12 +31211,13 @@ Transform:
   m_GameObject: {fileID: 2794080431063885759}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7070328, z: -0, w: -0.7071808}
-  m_LocalPosition: {x: -0.22773051, y: 0, z: 0.9883602}
+  m_LocalPosition: {x: -0, y: 0, z: 0.763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2214153985463643380}
   - {fileID: 2015681562927236288}
+  - {fileID: 5244367904068968819}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 270.012, z: 0}
 --- !u!23 &4060616486230478605
@@ -39946,14 +39923,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492103038841886211}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25650012, y: 0.74501, z: 0.98646003}
+  m_LocalRotation: {x: 0, y: -0.7070328, z: -0, w: -0.7071808}
+  m_LocalPosition: {x: -0.002, y: 0.74501, z: 0.051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5068998792193530019}
   - {fileID: 554813345757471737}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 4059914008842183589}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5244613501398715678
 MonoBehaviour:
@@ -53316,7 +53293,7 @@ Transform:
   m_GameObject: {fileID: 6868609738785507377}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.000000104308114}
-  m_LocalPosition: {x: -0.22433007, y: 1, z: -0.007140003}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -67975,6 +67952,5 @@ SceneRoots:
   - {fileID: 3410321219886048549}
   - {fileID: 4059914008842183589}
   - {fileID: 1333346819979005936}
-  - {fileID: 5244367904068968819}
   - {fileID: 2051319558}
   - {fileID: 1511242893}
