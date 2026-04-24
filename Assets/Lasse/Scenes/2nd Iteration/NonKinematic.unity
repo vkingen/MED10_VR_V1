@@ -66556,7 +66556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879ac2b68b9143b40bafc585fb9ca861, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChange
-  nameOfSceneToChangeTo: Interaction - Sug - Kinematic
+  nameOfSceneToChangeTo: Kinematic
 --- !u!4 &2055470439
 Transform:
   m_ObjectHideFlags: 0
