@@ -447,7 +447,10 @@ namespace BNG {
                 }
             }
         }
-
+        public void ToggleRemovability(bool state)
+        {
+            CanRemoveItem = state;
+        }
         public virtual bool CanBeRemoved() {
             // Not allowed to be removed
             if (!CanRemoveItem) {
