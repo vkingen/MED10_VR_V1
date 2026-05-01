@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class CleaningZone : MonoBehaviour
 {
@@ -9,10 +10,15 @@ public class CleaningZone : MonoBehaviour
 
     private Coroutine stopSoundRoutine;
 
+    public UnityEvent whenCleaned;
+
     private void OnTriggerEnter(Collider other)
     {
         InnerCannula innerCannula = other.GetComponentInParent<InnerCannula>();
+        
         if (innerCannula == null) return;
+
+        whenCleaned.Invoke();
 
         // Cancel delayed stop if re-entering
         if (stopSoundRoutine != null)
