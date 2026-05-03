@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Grabber
   - Item
+  - GrabberLeft
   layers:
   - Default
   - TransparentFX

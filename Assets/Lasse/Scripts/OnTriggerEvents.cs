@@ -8,6 +8,8 @@ public class OnTriggerEvents : MonoBehaviour
     public Material materialToChangeTo;
     public bool changeMaterial;
 
+    public bool hasCollidedWithOther = false;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,6 +26,7 @@ public class OnTriggerEvents : MonoBehaviour
     public void ChangeMaterial(SkinnedMeshRenderer sMR)
     {
         sMR.material = materialToChangeTo;
+        hasCollidedWithOther = true;
     }
 
 }
