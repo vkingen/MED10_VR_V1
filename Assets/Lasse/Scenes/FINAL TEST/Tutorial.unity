@@ -8660,7 +8660,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1467946331}
+  - {fileID: 3863365286601158958}
+  - {fileID: 3483030128437444940}
   m_Father: {fileID: 5839439005013199842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &228395416
@@ -40044,8 +40045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b646e2949ffb74c9ca8c512b4411df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HeldItem: {fileID: 7832044683313638277}
-  StartingItem: {fileID: 7832044683313638277}
+  HeldItem: {fileID: 228395419}
+  StartingItem: {fileID: 228395419}
   AutoSnapItem: 0
   CanDropItem: 0
   CanRemoveItem: 1
@@ -50595,39 +50596,6 @@ CapsuleCollider:
   m_Height: 0.035
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1467946330
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1467946331}
-  m_Layer: 10
-  m_Name: GFX
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1467946331
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467946330}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3863365286601158958}
-  - {fileID: 3483030128437444940}
-  m_Father: {fileID: 228395415}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1468180687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64849,7 +64817,7 @@ GameObject:
   - component: {fileID: 1863093458}
   - component: {fileID: 1863093457}
   m_Layer: 10
-  m_Name: PingPongBall
+  m_Name: FugterVentil
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78849,12 +78817,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3574616368946344068}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.49999994, y: 0.5000007, z: 0.49999928, w: 0.5}
+  m_LocalRotation: {x: -0.5000001, y: 0.5000007, z: 0.4999993, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1467946331}
+  m_Father: {fileID: 228395415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &3496049820488171538
 MeshRenderer:
@@ -79051,12 +79019,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741496029540639208}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.49999994, y: 0.5000007, z: 0.49999928, w: 0.5}
+  m_LocalRotation: {x: -0.5000001, y: 0.5000007, z: 0.4999993, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1467946331}
+  m_Father: {fileID: 228395415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &3995549507109218087
 Transform:
