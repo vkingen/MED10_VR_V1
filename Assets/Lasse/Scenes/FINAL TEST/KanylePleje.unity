@@ -8836,7 +8836,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0339, y: -0.00091, z: -0.0425}
-  m_LocalScale: {x: 0.0077087996, y: 0.00077141955, z: 0.0077087996}
+  m_LocalScale: {x: 0.0077087996, y: 0.002, z: 0.0077087996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -9631,6 +9631,71 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310502905}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &312606265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312606266}
+  - component: {fileID: 312606267}
+  m_Layer: 10
+  m_Name: GrabPoint RightHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312606266
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312606265}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.6227812, y: -0.12826553, z: 0.76440424, w: -0.106666654}
+  m_LocalPosition: {x: 0.042800028, y: 0.042600036, z: -0.05519998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 506272736}
+  m_LocalEulerAnglesHint: {x: 19.205, y: -78.307, z: 180.201}
+--- !u!114 &312606267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312606265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPoseType: 1
+  SelectedHandPose: {fileID: 11400000, guid: 22d61df548122204f8525434aa8b8103, type: 2}
+  HandPose: 2
+  LeftHandIsValid: 0
+  RightHandIsValid: 1
+  InvertLeftHand: 0
+  InvertLeftPositionX: 1
+  InvertLeftPositionY: 0
+  InvertLeftPositionZ: 0
+  InvertLeftEulerX: 0
+  InvertLeftEulerY: 1
+  InvertLeftEulerZ: 1
+  HandPosition: {fileID: 0}
+  MaxDegreeDifferenceAllowed: 360
+  IndexBlendMin: 0
+  IndexBlendMax: 0
+  ThumbBlendMin: 0
+  ThumbBlendMax: 0
+  ShowAngleGizmo: 1
+  LeftHandPreviewPrefab: {fileID: 0}
+  RightHandPreviewPrefab: {fileID: 0}
 --- !u!1 &313112405
 GameObject:
   m_ObjectHideFlags: 0
@@ -9934,6 +9999,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1003915077}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventName: FilterRemove
     publicEvent:
       m_PersistentCalls:
@@ -9986,6 +10063,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1256067591}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventName: SyrringeRemove
     publicEvent:
       m_PersistentCalls:
@@ -10025,6 +10114,18 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 540466567}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
   - eventName: SyrringeClean
     publicEvent:
@@ -10267,6 +10368,18 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1627148459}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1745111671}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
           m_Mode: 6
@@ -12213,7 +12326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &397001453
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13923,7 +14036,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.02032, y: -0.00091, z: -0.0376}
-  m_LocalScale: {x: 0.014866496, y: 0.00077141955, z: 0.0077087996}
+  m_LocalScale: {x: 0.014866496, y: 0.002, z: 0.0077087996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -15196,6 +15309,8 @@ Transform:
   - {fileID: 1504225170}
   - {fileID: 756217670}
   - {fileID: 1694130590}
+  - {fileID: 312606266}
+  - {fileID: 1684475407}
   m_Father: {fileID: 833001764}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &506272737
@@ -15265,7 +15380,9 @@ MonoBehaviour:
   SecondaryLookOffset: {x: 0, y: 0, z: 0}
   SecondaryLookAtTransform: {fileID: 0}
   LocalOffsetTransform: {fileID: 0}
-  GrabPoints: []
+  GrabPoints:
+  - {fileID: 312606266}
+  - {fileID: 1684475407}
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
@@ -16118,6 +16235,71 @@ Transform:
   - {fileID: 1591013700}
   m_Father: {fileID: 2102296230}
   m_LocalEulerAnglesHint: {x: 0, y: 240.418, z: 0}
+--- !u!1 &543990489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543990490}
+  - component: {fileID: 543990491}
+  m_Layer: 10
+  m_Name: GrabRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &543990490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543990489}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.29204518, y: 0.47606522, z: -0.2879163, w: 0.77793044}
+  m_LocalPosition: {x: -0.0583, y: 0.0075, z: -0.1046}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 955804707}
+  m_LocalEulerAnglesHint: {x: 46.762, y: 56.695, z: -14.36}
+--- !u!114 &543990491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543990489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BNG.GrabPoint
+  handPoseType: 1
+  SelectedHandPose: {fileID: 11400000, guid: 1f4db809fde21604c8dc7e55554cdcc9, type: 2}
+  HandPose: 0
+  LeftHandIsValid: 0
+  RightHandIsValid: 1
+  InvertLeftHand: 0
+  InvertLeftPositionX: 1
+  InvertLeftPositionY: 0
+  InvertLeftPositionZ: 0
+  InvertLeftEulerX: 0
+  InvertLeftEulerY: 1
+  InvertLeftEulerZ: 1
+  HandPosition: {fileID: 0}
+  MaxDegreeDifferenceAllowed: 360
+  IndexBlendMin: 0
+  IndexBlendMax: 0
+  ThumbBlendMin: 0
+  ThumbBlendMax: 0
+  ShowAngleGizmo: 1
+  LeftHandPreviewPrefab: {fileID: 0}
+  RightHandPreviewPrefab: {fileID: 0}
 --- !u!1 &546025933
 GameObject:
   m_ObjectHideFlags: 0
@@ -16682,7 +16864,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0419, y: -0.00091, z: -0.0291}
-  m_LocalScale: {x: 0.0077087996, y: 0.00077141955, z: 0.0077087996}
+  m_LocalScale: {x: 0.0077087996, y: 0.002, z: 0.0077087996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -18264,7 +18446,7 @@ GameObject:
   - component: {fileID: 656544523}
   - component: {fileID: 656544522}
   m_Layer: 10
-  m_Name: Filter_wTop
+  m_Name: VFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20203,7 +20385,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.0039, y: -0.00091, z: -0.0383}
-  m_LocalScale: {x: 0.0077087996, y: 0.00077141955, z: 0.0077087996}
+  m_LocalScale: {x: 0.0077087996, y: 0.002, z: 0.0077087996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -22880,7 +23062,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.01145, y: -0.00091, z: 0.03333}
-  m_LocalScale: {x: 0.017610598, y: 0.00077141955, z: 0.009244315}
+  m_LocalScale: {x: 0.017610598, y: 0.002, z: 0.009244315}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -26458,7 +26640,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0344, y: -0.00091, z: 0.0373}
-  m_LocalScale: {x: 0.0077087996, y: 0.00077141955, z: 0.0077087996}
+  m_LocalScale: {x: 0.0077087996, y: 0.002, z: 0.0077087996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -28415,6 +28597,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 543990490}
+  - {fileID: 1805121165}
   - {fileID: 1672907028}
   - {fileID: 2046769635}
   - {fileID: 1072415121}
@@ -28487,7 +28671,9 @@ MonoBehaviour:
   SecondaryLookOffset: {x: 0, y: 0, z: 0}
   SecondaryLookAtTransform: {fileID: 0}
   LocalOffsetTransform: {fileID: 0}
-  GrabPoints: []
+  GrabPoints:
+  - {fileID: 543990490}
+  - {fileID: 1805121165}
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
@@ -31752,6 +31938,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 363369654}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   delayedSnapZoneOnDetachEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -32350,7 +32548,7 @@ Transform:
   m_GameObject: {fileID: 1072415120}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0.0002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40589,7 +40787,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.01427, y: -0.00091, z: 0.03827}
-  m_LocalScale: {x: 0.01696807, y: 0.00077141955, z: 0.007171342}
+  m_LocalScale: {x: 0.01696807, y: 0.002, z: 0.007171342}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -46220,7 +46418,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.03588, y: -0.00091, z: -0.00543}
-  m_LocalScale: {x: 0.008550523, y: 0.00077141955, z: 0.015858233}
+  m_LocalScale: {x: 0.008550523, y: 0.002, z: 0.015858233}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -47441,7 +47639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1521915091
 RectTransform:
   m_ObjectHideFlags: 0
@@ -52162,7 +52360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1627148460
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53592,6 +53790,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1309879917}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1684475406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684475407}
+  - component: {fileID: 1684475408}
+  m_Layer: 10
+  m_Name: GrabPoint LeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1684475407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684475406}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.18697816, y: -0.60697204, z: 0.016519263, w: 0.7722378}
+  m_LocalPosition: {x: 0.042300016, y: -0.051300112, z: -0.043599993}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 506272736}
+  m_LocalEulerAnglesHint: {x: -15.589, y: -78.426, z: 15.197}
+--- !u!114 &1684475408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684475406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPoseType: 1
+  SelectedHandPose: {fileID: 11400000, guid: 22d61df548122204f8525434aa8b8103, type: 2}
+  HandPose: 2
+  LeftHandIsValid: 1
+  RightHandIsValid: 0
+  InvertLeftHand: 0
+  InvertLeftPositionX: 1
+  InvertLeftPositionY: 0
+  InvertLeftPositionZ: 0
+  InvertLeftEulerX: 0
+  InvertLeftEulerY: 1
+  InvertLeftEulerZ: 1
+  HandPosition: {fileID: 0}
+  MaxDegreeDifferenceAllowed: 360
+  IndexBlendMin: 0
+  IndexBlendMax: 0
+  ThumbBlendMin: 0
+  ThumbBlendMax: 0
+  ShowAngleGizmo: 1
+  LeftHandPreviewPrefab: {fileID: 0}
+  RightHandPreviewPrefab: {fileID: 0}
 --- !u!1 &1689893759
 GameObject:
   m_ObjectHideFlags: 0
@@ -55046,7 +55309,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.03747, y: -0.00091, z: 0.0218}
-  m_LocalScale: {x: 0.012203477, y: 0.00077141955, z: 0.015858233}
+  m_LocalScale: {x: 0.012203477, y: 0.002, z: 0.015858233}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1072415121}
@@ -57139,6 +57402,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 249646544}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1805121164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1805121165}
+  - component: {fileID: 1805121166}
+  m_Layer: 10
+  m_Name: GrabLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1805121165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805121164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.3406057, y: 0.7095357, z: -0.3301985, w: 0.52107185}
+  m_LocalPosition: {x: -0.0631, y: 0.0185, z: 0.1007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 955804707}
+  m_LocalEulerAnglesHint: {x: 55.44, y: 114.908, z: 14.208}
+--- !u!114 &1805121166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805121164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BNG.GrabPoint
+  handPoseType: 1
+  SelectedHandPose: {fileID: 11400000, guid: 1f4db809fde21604c8dc7e55554cdcc9, type: 2}
+  HandPose: 0
+  LeftHandIsValid: 1
+  RightHandIsValid: 0
+  InvertLeftHand: 0
+  InvertLeftPositionX: 1
+  InvertLeftPositionY: 0
+  InvertLeftPositionZ: 0
+  InvertLeftEulerX: 0
+  InvertLeftEulerY: 1
+  InvertLeftEulerZ: 1
+  HandPosition: {fileID: 0}
+  MaxDegreeDifferenceAllowed: 360
+  IndexBlendMin: 0
+  IndexBlendMax: 0
+  ThumbBlendMin: 0
+  ThumbBlendMax: 0
+  ShowAngleGizmo: 1
+  LeftHandPreviewPrefab: {fileID: 0}
+  RightHandPreviewPrefab: {fileID: 0}
 --- !u!1 &1805334951
 GameObject:
   m_ObjectHideFlags: 0
@@ -66592,6 +66920,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 397001452}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 656544520}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
