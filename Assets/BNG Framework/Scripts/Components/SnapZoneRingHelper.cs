@@ -51,7 +51,13 @@ namespace BNG {
 
             // Color
             ringText.color = validSnap ? ValidSnapColor : RestingColor;
+
+            // VFX toggle
+            if (VFX != null)
+                VFX.gameObject.SetActive(validSnap);
         }
+
+        public Transform VFX;
 
         bool checkIsValidSnap() {
             if(nearbyGrabbables != null) {

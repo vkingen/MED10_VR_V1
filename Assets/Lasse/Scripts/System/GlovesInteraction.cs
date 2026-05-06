@@ -4,18 +4,33 @@ public class GlovesInteraction : MonoBehaviour
 {
     public UnityEvent glovesAreOn;
     public OnTriggerEvents[] triggers;
-    
+    int num = 0;
+
+
+    bool leftGloveOn, rightGloveOn;
+    public void LeftGlove()
+    {
+        if (!leftGloveOn)
+        {
+            leftGloveOn = true;
+            num++;
+            GloveCheck();
+        }
+    }
+
+    public void RightGlove()
+    {
+        if (!rightGloveOn)
+        {
+            rightGloveOn = true;
+            num++;
+            GloveCheck();
+        }
+    }
+
     public void GloveCheck()
     {
-        int num = 0;
-        foreach (var trigger in triggers)
-        {
-            if (trigger.hasCollidedWithOther)
-            {
-                num++;
-            }
-        }
-        if(num == 2)
+        if (num == 2)
         {
             glovesAreOn.Invoke();
         }
