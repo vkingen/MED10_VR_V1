@@ -1,5 +1,6 @@
 using BNG;
 using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -16,6 +17,7 @@ public class GuidingSystem : MonoBehaviour
 {
 
     public StepID[] steps;
+    List<string> doneIDNames = new List<string>();
 
     private void Start()
     {
@@ -24,24 +26,14 @@ public class GuidingSystem : MonoBehaviour
 
     public void SetCurrentCondition(string state)
     {
+        
         foreach (StepID step in steps)
         {
-            if(state == step.eventName)
+            if(state == step.eventName && !doneIDNames.Contains(state))
             {
+                doneIDNames.Add(state);
                 step.publicEvent.Invoke();
             }
         }
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            Debuggeren();
-        }
-    }
-    public void Debuggeren()
-    {
-        SetCurrentCondition("StomaAdd");
     }
 }
