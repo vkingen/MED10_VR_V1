@@ -7,7 +7,6 @@ public class KateterSwap : MonoBehaviour
     public SnapZone kateterSnap;
     public Grabbable kateter;
     public GameObject kateterUpper;
-    public Transform parent;
 
     public void Swap()
     {
