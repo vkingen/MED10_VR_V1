@@ -15346,7 +15346,6 @@ MonoBehaviour:
   kateterSnap: {fileID: 1937511471}
   kateter: {fileID: 81224051}
   kateterUpper: {fileID: 1476048870}
-  parent: {fileID: 0}
 --- !u!4 &674112905
 Transform:
   m_ObjectHideFlags: 0
@@ -15738,7 +15737,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tag handsker p\xE5\n\n<---------------"
+  m_text: "Tag handsker p\xE5 ved at tage h\xE6nderne ind i den bl\xE5 boks"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -30076,7 +30075,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Tag sugekateter\np\xE5 Y-r\xF8ret"
+  m_text: "S\xE6t sugekateter\np\xE5 Y-r\xF8ret"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
