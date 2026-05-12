@@ -587,14 +587,7 @@ AnimationClip:
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 3.45
-    functionName: Play
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 11.983334
+  - time: 0
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 0}

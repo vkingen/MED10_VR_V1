@@ -25947,7 +25947,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c4f0c8a7e0e9b4daf62c64a909489f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  objectToSpawn: {fileID: 6518657322635751230, guid: b0b582d91fca49746bac6023b2339c22,
+  objectToSpawn: {fileID: 6518657322635751230, guid: 5715356f2c6348d4d8220b1d32132a25,
     type: 3}
 --- !u!1 &988355060
 GameObject:
@@ -34735,7 +34735,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 3b74ba270c673ad4bab2f3f86f1943ac, type: 3}
+  m_Resource: {fileID: 8300000, guid: 24dbacfd0cb65e4459e0b412f6d10587, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -49480,7 +49480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c4f0c8a7e0e9b4daf62c64a909489f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSpawner
-  objectToSpawn: {fileID: 6518657322635751230, guid: b0b582d91fca49746bac6023b2339c22,
+  objectToSpawn: {fileID: 6518657322635751230, guid: 56c19b9c865832c4fb9ca5c305396b10,
     type: 3}
 --- !u!1 &1751577059
 GameObject:
@@ -63047,7 +63047,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7a8ac50933edecd43a8b3b6ebd1424b9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.165
+  m_Volume: 0.095
   m_Pitch: 1
   Loop: 1
   Mute: 0
