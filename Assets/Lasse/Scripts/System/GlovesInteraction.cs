@@ -6,7 +6,6 @@ public class GlovesInteraction : MonoBehaviour
     public OnTriggerEvents[] triggers;
     int num = 0;
 
-
     bool leftGloveOn, rightGloveOn;
     public void LeftGlove()
     {
@@ -17,7 +16,6 @@ public class GlovesInteraction : MonoBehaviour
             GloveCheck();
         }
     }
-
     public void RightGlove()
     {
         if (!rightGloveOn)
@@ -27,7 +25,6 @@ public class GlovesInteraction : MonoBehaviour
             GloveCheck();
         }
     }
-
     public void GloveCheck()
     {
         if (num == 2)
@@ -35,5 +32,5 @@ public class GlovesInteraction : MonoBehaviour
             glovesAreOn.Invoke();
         }
     }
-
 }
+

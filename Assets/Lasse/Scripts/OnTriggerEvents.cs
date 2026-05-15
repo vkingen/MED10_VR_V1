@@ -7,9 +7,7 @@ public class OnTriggerEvents : MonoBehaviour
     public UnityEvent onTriggerEvent;
     public Material materialToChangeTo;
     public bool changeMaterial;
-
     public bool hasCollidedWithOther = false;
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -28,7 +26,6 @@ public class OnTriggerEvents : MonoBehaviour
         sMR.material = materialToChangeTo;
         hasCollidedWithOther = true;
     }
-
 }
 
 

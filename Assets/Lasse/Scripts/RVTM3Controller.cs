@@ -73,7 +73,7 @@ public class RVTM3Controller : MonoBehaviour
         }
         if (stopping)
         {
-            // Smooth transition (mechanical feel)
+            //smooth transition
             currentPressure = Mathf.Lerp(
                 currentPressure,
                 targetPressure,
@@ -82,16 +82,17 @@ public class RVTM3Controller : MonoBehaviour
         }
         
         UpdateNeedle();
-        UpdateAudio(); // ← add this
+        UpdateAudio(); 
     }
+
     void UpdateAudio()
     {
         if (suctionSource == null) return;
 
-        // Normalize pressure (0 → 0, -1000 → 1)
+        // normalize pressure 
         float normalized = Mathf.InverseLerp(maxPressure, minPressure, currentPressure);
 
-        // Pitch follows pressure
+        // audio pitch follows pressure (maybe change later?)
         float targetPitch = Mathf.Lerp(minPitch, maxPitch, normalized);
         suctionSource.pitch = Mathf.Lerp(
             suctionSource.pitch,
@@ -99,15 +100,13 @@ public class RVTM3Controller : MonoBehaviour
             Time.deltaTime * audioSmoothSpeed
         );
 
-        
-
-        // Play / Stop logic
+        // Play
         if ((turnedOn || stopping) && !suctionSource.isPlaying)
         {
             suctionSource.Play();
         }
 
-        // Stop when fully silent
+        // Stop
         if (!turnedOn && suctionSource.volume < 0.01f && suctionSource.isPlaying)
         {
             suctionSource.Stop();
@@ -134,8 +133,6 @@ public class RVTM3Controller : MonoBehaviour
             firstTurnOn = true;
             targetPressure = -400f;
         }
-
-        Debug.Log("Turning on");
     }
     public void TurnOff()
     {
@@ -143,36 +140,28 @@ public class RVTM3Controller : MonoBehaviour
         stopping = true;
 
         targetPressure = 0;
-        Debug.Log("Turning off");
     }
-    
     void UpdatePressure()
     {
-        // Non-linear response (more realistic)
         float curved = Mathf.Pow(knobValue, responseCurve);
 
-        // Map: 0 → 0 mbar, 1 → -1000 mbar
         targetPressure = Mathf.Lerp(maxPressure, minPressure, curved);
 
-        // Smooth transition (mechanical feel)
+        // smooth lerping
         currentPressure = Mathf.Lerp(
             currentPressure,
             targetPressure,
             Time.deltaTime * smoothingSpeed
         );
     }
-
-    
     void UpdateNeedle()
     {
         if (needleTransform == null) return;
-
-        // Normalize (0 mbar → 0, -1000 → 1)
+        
         float normalized = Mathf.InverseLerp(maxPressure, minPressure, currentPressure);
 
         float targetAngle = Mathf.Lerp(angleAtZero, angleAtMaxVacuum, normalized);
 
-        // Damped movement (important for realism)
         currentNeedleAngle = Mathf.Lerp(
             currentNeedleAngle,
             targetAngle,

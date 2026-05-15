@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class ObjectSpawner : MonoBehaviour
 {
     public GameObject objectToSpawn;
@@ -10,3 +9,5 @@ public class ObjectSpawner : MonoBehaviour
         clone.transform.position = position.position;
     }
 }
+
+
