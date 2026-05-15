@@ -38,7 +38,6 @@ public class RVTM3Controller : MonoBehaviour
     bool stopping = false;
     bool firstTurnOn = false;
 
-
     [Header("Audio")]
     public AudioSource suctionSource;
 
@@ -100,14 +99,7 @@ public class RVTM3Controller : MonoBehaviour
             Time.deltaTime * audioSmoothSpeed
         );
 
-        //// Volume control
-        //float targetVolume = (turnedOn || stopping) ? maxVolume : 0f;
-
-        //suctionSource.volume = Mathf.Lerp(
-        //    suctionSource.volume,
-        //    targetVolume,
-        //    Time.deltaTime * audioSmoothSpeed
-        //);
+        
 
         // Play / Stop logic
         if ((turnedOn || stopping) && !suctionSource.isPlaying)
@@ -121,7 +113,6 @@ public class RVTM3Controller : MonoBehaviour
             suctionSource.Stop();
         }
     }
-
 
     public void SetKnobValue(float value)
     {
