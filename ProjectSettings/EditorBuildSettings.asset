@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Lasse/Scenes/2nd Iteration/TutorialAndGrabInteractions.unity
+    guid: 0c9a0fb101a013e45aa14a94f614400a
+  - enabled: 1
     path: Assets/Lasse/Scenes/FINAL TEST/Tutorial.unity
     guid: ca5259d7227d6364f8e0b5f657c0a34f
   - enabled: 1
