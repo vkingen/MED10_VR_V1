@@ -7966,37 +7966,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181813343}
   m_CullTransparentMesh: 0
---- !u!1 &184903383
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 184903384}
-  m_Layer: 0
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &184903384
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184903383}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &186898016
 GameObject:
   m_ObjectHideFlags: 0
@@ -8012,7 +7981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &186898017
 Transform:
   m_ObjectHideFlags: 0
@@ -14205,6 +14174,30 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
         - m_Target: {fileID: 1944753696}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 43319174}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1188794115}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
           m_Mode: 6
@@ -29787,7 +29780,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Grab
+          m_StringArgument: Bed
           m_BoolArgument: 0
         m_CallState: 2
   delayedSnapZoneOnDetachEvent:
@@ -35325,7 +35318,7 @@ Transform:
   m_GameObject: {fileID: 844256258}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.924, y: 1, z: -1.955}
+  m_LocalPosition: {x: -0.874, y: 1, z: 1.048}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49038,7 +49031,7 @@ MonoBehaviour:
   onButtonDown:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 264961537}
+      - m_Target: {fileID: 143620798}
         m_TargetAssemblyTypeName: ScreenFade, Assembly-CSharp
         m_MethodName: FadeToBlackAndLoadScene
         m_Mode: 5
@@ -49047,7 +49040,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: KanylePleje
+          m_StringArgument: KanylePleje_Tablet
           m_BoolArgument: 0
         m_CallState: 2
   onButtonUp:
@@ -50487,7 +50480,7 @@ Transform:
   - {fileID: 319052200}
   - {fileID: 209132154}
   - {fileID: 72466978}
-  m_Father: {fileID: 1568804561}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191861504
 GameObject:
@@ -60202,7 +60195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1411181626
 Transform:
   m_ObjectHideFlags: 0
@@ -67862,7 +67855,6 @@ Transform:
   - {fileID: 7683578832056323851}
   - {fileID: 833001764}
   - {fileID: 1977043477}
-  - {fileID: 1188794116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1569742975
@@ -82609,10 +82601,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 844256259}
   - {fileID: 35958523}
   - {fileID: 1769928391}
   - {fileID: 845019659}
+  - {fileID: 844256259}
   m_Father: {fileID: 1720999255}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1950781817
@@ -95165,7 +95157,6 @@ SceneRoots:
   - {fileID: 1976741942}
   - {fileID: 2011162231}
   - {fileID: 1101169621}
-  - {fileID: 184903384}
   - {fileID: 1252860280}
   - {fileID: 499744668}
   - {fileID: 3908535}
@@ -95174,3 +95165,4 @@ SceneRoots:
   - {fileID: 1036173701}
   - {fileID: 759683185}
   - {fileID: 1720999255}
+  - {fileID: 1188794116}

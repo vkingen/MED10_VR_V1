@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Lasse/Scenes/2nd Iteration/TutorialAndGrabInteractions.unity
-    guid: 0c9a0fb101a013e45aa14a94f614400a
+    path: Assets/Lasse/Scenes/FINAL TEST/Tutorial_Exam.unity
+    guid: 9a853c4f42bf938498dad94721a5cd67
   - enabled: 1
-    path: Assets/Lasse/Scenes/FINAL TEST/Tutorial.unity
-    guid: ca5259d7227d6364f8e0b5f657c0a34f
-  - enabled: 1
-    path: Assets/Lasse/Scenes/FINAL TEST/KanylePleje.unity
-    guid: bb3a027d9dfb6974ea3c9a3664fb22e2
+    path: Assets/Lasse/Scenes/FINAL TEST/KanylePleje_Tablet.unity
+    guid: 3b8434bbab97f474bbfb2eacbe1b4384
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: a7512768906c3d5408c2f4438a029684,
       type: 2}
